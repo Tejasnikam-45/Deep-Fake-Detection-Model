@@ -161,13 +161,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - PyTorch team for the deep learning framework
 - Open-source community for various tools and libraries
 
-## 📧 Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_twitter) - email@example.com
-
-Project Link: [https://github.com/YASHSALI2005/DEEPFAKE-DETECTION-MODEL](https://github.com/YASHSALI2005/DEEPFAKE-DETECTION-MODEL)
-
----
 <div align="center">
-  Made with ❤️ by YASHSALI2005
+  Made with ❤️ by YASHSALI
 </div>
