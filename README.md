@@ -1,26 +1,46 @@
-<<<<<<< HEAD
-# DeepFake Detection Platform
+# 🎭 DeepFake Detection Platform
 
-A full-stack web application for detecting deepfake videos using AI/ML. The platform allows users to upload videos and analyze them for potential deepfake manipulation.
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
+[![React](https://img.shields.io/badge/React-18.0%2B-61dafb.svg)](https://reactjs.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-14.0%2B-green.svg)](https://nodejs.org/)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Features
+<div align="center">
+  <img src="assets/image.png" alt="DeepFake Detection Demo" width="600"/>
+</div>
 
-- User authentication (login/signup)
-- Video upload with drag-and-drop support
-- Real-time deepfake detection analysis
-- Modern, responsive UI with animations
-- Secure API endpoints
-- MongoDB database integration
+## 🌟 Features
 
-## Tech Stack
+- 🔒 **Secure Authentication** - User registration and login system
+- 📤 **Easy Upload** - Drag-and-drop video upload interface
+- 🤖 **Real-time Analysis** - Advanced AI-powered deepfake detection
+- 🎨 **Modern UI/UX** - Beautiful interface with smooth animations
+- 📱 **Responsive Design** - Works seamlessly on desktop and mobile
+- 🔐 **API Security** - Protected endpoints with JWT authentication
 
-- Frontend: React, React Router, Framer Motion, TailwindCSS
-- Backend: Node.js, Express
-- Database: MongoDB
-- Authentication: JWT, bcrypt
-- File Upload: Multer
+## 🚀 Tech Stack
 
-## Project Structure
+### Frontend
+- **React** - Modern UI library
+- **TailwindCSS** - Utility-first CSS framework
+- **Framer Motion** - Animation library
+- **React Router** - Navigation
+- **Context API** - State management
+
+### Backend
+- **Node.js** - Runtime environment
+- **Express** - Web framework
+- **MongoDB** - Database
+- **JWT** - Authentication
+- **Multer** - File upload
+
+### ML/AI
+- **PyTorch** - Deep learning framework
+- **OpenCV** - Image processing
+- **NumPy** - Numerical computations
+- **Scikit-learn** - Machine learning utilities
+
+## 📂 Project Structure
 
 ```
 ├── frontend/           # React frontend application
@@ -55,7 +75,13 @@ A full-stack web application for detecting deepfake videos using AI/ML. The plat
 
 ```
 
-## Setup and Installation
+## 🛠️ Installation
+
+### Prerequisites
+- Python 3.8+
+- Node.js 14+
+- MongoDB
+- CUDA-capable GPU (recommended)
 
 ### Frontend Setup
 ```bash
@@ -68,6 +94,7 @@ npm start
 ```bash
 cd backend
 npm install
+# Create .env file with required variables
 node server.js
 ```
 
@@ -75,58 +102,72 @@ node server.js
 ```bash
 cd ml
 pip install -r requirements.txt
-python train_model.py
+python train_model.py  # For training the model
 ```
 
-## Development
+## 🔧 Configuration
 
-### Running Tests
-```bash
-cd tests
-python test_model.py
+### Backend Environment Variables
+Create a `.env` file in the backend directory:
+```env
+MONGODB_URI=your_mongodb_uri
+JWT_SECRET=your_jwt_secret
+PORT=5000
 ```
 
-### Scripts
-- `scripts/download_test_videos.py`: Utility to download test videos
-- `ml/train_model.py`: Train the ML model
-- `ml/preprocess.py`: Preprocess data for training
+### Frontend Environment Variables
+Create a `.env` file in the frontend directory:
+```env
+REACT_APP_API_URL=http://localhost:5000
+```
 
-## Directory Structure Explanation
+## 📊 Model Training Data
 
-- `frontend/`: Contains the React.js frontend application
-- `backend/`: Contains the Node.js backend server
-- `ml/`: Contains all machine learning related code
-- `tests/`: Contains all test files and test data
-- `scripts/`: Contains utility scripts
-- `assets/`: Contains static assets
-- `logs/`: Contains application logs
+The model training data is not included in this repository due to size constraints. To obtain the training data:
 
-## Contributing
+1. Download the FaceForensics++ dataset (contact authors for access)
+2. Place the videos in `backend/ml/data/raw/`
+3. Run preprocessing scripts:
+   ```bash
+   cd backend/ml
+   python preprocess.py
+   ```
+
+## 🔌 API Endpoints
+
+### Authentication
+- `POST /api/auth/register` - User registration
+- `POST /api/auth/login` - User login
+
+### Video Analysis
+- `POST /api/videos/upload` - Upload video for analysis
+- `GET /api/videos/analysis/:id` - Get analysis results
+
+## 🤝 Contributing
 
 1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a new Pull Request
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-## License
+## 📝 License
 
-[Add your license here]
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## API Endpoints
+## 🙏 Acknowledgments
 
-- POST /api/auth/register - User registration
-- POST /api/auth/login - User login
-- POST /api/videos/upload - Video upload
-- GET /api/videos/analysis/:id - Get video analysis results
+- FaceForensics++ dataset team for training data
+- PyTorch team for the deep learning framework
+- Open-source community for various tools and libraries
 
-## Security Features
+## 📧 Contact
 
-- JWT-based authentication
-- Password hashing with bcrypt
-- Input validation and sanitization
-- Protected API routes
-- Secure file upload handling 
-=======
-# DEEPFAKE-DETECTION-MODEL
->>>>>>> ce9d661b7842f07871c2f4c32f2fa740395bcfcf
+Your Name - [@your_twitter](https://twitter.com/your_twitter) - email@example.com
+
+Project Link: [https://github.com/YASHSALI2005/DEEPFAKE-DETECTION-MODEL](https://github.com/YASHSALI2005/DEEPFAKE-DETECTION-MODEL)
+
+---
+<div align="center">
+  Made with ❤️ by YASHSALI2005
+</div>
