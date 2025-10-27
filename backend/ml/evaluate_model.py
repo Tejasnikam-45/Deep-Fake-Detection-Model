@@ -4,8 +4,8 @@ import os
 from sklearn.metrics import classification_report, confusion_matrix
 
 # Define paths
-DATA_PATH = os.path.join(os.getcwd(), "data/processed_data")
-MODEL_PATH = os.path.join(os.getcwd(), "models/best_model.pth")
+DATA_PATH = os.path.join(os.getcwd(), "backend/ml/data/processed_data")
+MODEL_PATH = os.path.join(os.getcwd(), "backend/ml/models/best_model.pth")
 
 # Check if test data exists
 X_test_path = os.path.join(DATA_PATH, "X_test.npy")
